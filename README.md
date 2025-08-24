@@ -8,8 +8,8 @@ Some math functions for fine-tuning creep stats in a custom game (Dota-2 / Vampi
 - [Armour](#armour-function)
 - [Magic Resistance](#magic-resistance-function)
 - [Damage Reduction](#damage-reduction-function)
-- [Gold] (#creep-kill-gold-function)
-- [Exp] (#creep-kill-exp-function)
+- [Gold](#creep-kill-gold-function)
+- [Exp](#creep-kill-exp-function)
 
 ---
 
