@@ -23,20 +23,20 @@ We use a normalized logistic (sigmoid) blended with a straight line so it’s sm
 
 ### Linear baseline
 $$
-L(x)=y_{\min}+\frac{y_{\max}-y_{\min}}{120}\,x
+L(x)=y_{\min}+\frac{y_{\max}-y_{\min}}{120}\cdot x
 $$
 
 ### Normalized logistic that hits endpoints exactly
 $$
 G(x)=y_{\min}+(y_{\max}-y_{\min})\cdot
 \frac{\sigma\big(a(x-c)\big)-\sigma\big(a(0-c)\big)}
-{\sigma\big(a(120-c)\big)-\sigma\big(a(0-c)\big)},
-\qquad \sigma(z)=\frac{1}{1+e^{-z}}.
+{\sigma\big(a(120-c)\big)-\sigma\big(a(0-c)\big)}
+\qquad \sigma(z)=\frac{1}{1+e^{-z}}
 $$
 
 ### Final blended function
 $$
-F(x)=(1-\alpha)\,L(x)+\alpha\,G(x)
+F(x)=(1-\alpha)\cdot L(x)+\alpha\cdot G(x)
 $$
 
 This guarantees **exact endpoints**: $F(0)=2$ and $F(120)=20000$, with controllable easing.
