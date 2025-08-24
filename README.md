@@ -2,12 +2,14 @@
 
 Some math functions for fine-tuning creep stats in a custom game (Dota-2 / Vampire-Survivor style):
 
-- creep attack damage
-- creep attack speed
-- creep HP
-- creep armour
-- creep magic resistance
-- creep damage reduction
+- [Attack Damage](#attack-damage-function)
+- [Attack Speed](#attack-speed-function)
+- [HP](#hp-function)
+- [Armour](#armour-function)
+- [Magic Resistance](#magic-resistance-function)
+- [Damage Reduction](#damage-reduction-function)
+- [Gold] (#creep-kill-gold-function)
+- [Exp] (#creep-kill-exp-function)
 
 ---
 
