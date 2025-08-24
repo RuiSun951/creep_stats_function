@@ -28,9 +28,9 @@ $$
 
 ### Normalized logistic that hits endpoints exactly
 $$
-G(x)=y_{\min}+(y_{\max}-y_{\min})\;
-\frac{\sigma\!\big(a(x-c)\big)-\sigma\!\big(a(0-c)\big)}
-{\sigma\!\big(a(120-c)\big)-\sigma\!\big(a(0-c)\big)},
+G(x)=y_{\min}+(y_{\max}-y_{\min})\cdot
+\frac{\sigma\big(a(x-c)\big)-\sigma\big(a(0-c)\big)}
+{\sigma\big(a(120-c)\big)-\sigma\big(a(0-c)\big)},
 \qquad \sigma(z)=\frac{1}{1+e^{-z}}.
 $$
 
