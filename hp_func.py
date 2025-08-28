@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-y_min, y_max = 2.0, 20000.0
+y_min, y_max = 2.0, 5* 20000.0
 x_min, x_max = 0.0, 120.0
 
 def L(x):

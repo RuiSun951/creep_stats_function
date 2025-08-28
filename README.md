@@ -44,3 +44,27 @@ $$
 This guarantees **exact endpoints**: $F(0)=2$ and $F(120)=20000$, with controllable easing.
 
 ---
+
+## HP Function
+
+We use the same model as attack damage, but stretch the range 5 times (for Difficulty 1), if N+, change this scaling number
+
+- Domain: $x\in[0,120]$  
+- Range: $[y_{\min},y_{\max}] = [2,100000]$  
+- Center $c=60$ (midpoint), steepness $a>0$ (default $a=0.15$)  
+- Blend $\alpha\in[0,1]$ (default $\alpha=0.4$; lower $\Rightarrow$ more linear)
+
+$$
+L(x)=y_{\min}+\frac{y_{\max}-y_{\min}}{120}\cdot x
+$$
+
+$$
+G(x)=y_{\min}+(y_{\max}-y_{\min})\cdot
+\frac{\sigma\big(a(x-c)\big)-\sigma\big(a(0-c)\big)}
+{\sigma\big(a(120-c)\big)-\sigma\big(a(0-c)\big)}
+\qquad \sigma(z)=\frac{1}{1+e^{-z}}
+$$
+
+$$
+F(x)=(1-\alpha)\cdot L(x)+\alpha\cdot G(x)
+$$
